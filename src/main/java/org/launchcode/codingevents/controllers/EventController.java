@@ -17,7 +17,7 @@ public class EventController {
     private static List<String> events = new ArrayList<>();
 
     @GetMapping
-    public String EventController(Model model){
+    public String displayAllEvents(Model model){
        model.addAttribute("events", events);
        return "events/index";
     }
